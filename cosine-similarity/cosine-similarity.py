@@ -10,7 +10,7 @@ def cosine_similarity(a, b):
     m = np.dot(a,b)
     n = norm(a) * norm(b)
     
-    if norm(a) == 0:
+    if norm(a) ==0 or norm(b) == 0:
         return 0
     else:
         return (m/n)
